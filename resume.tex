@@ -1,0 +1,33 @@
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[9pt, letterpaper]{russell}
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=0.5cm, footskip=.5cm}
+% Specify the location of the included fonts
+\fontdir[fonts/]
+% Color for highlights
+\colorlet{russell}{russell-black}
+% Set false if you don't want to highlight section with russell color
+\setbool{acvSectionColorHighlight}{false}
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Available options: circle|rectangle,edge/noedge,left/right
+\name{\bf{FENNY}}{\bf{VARGHESE}}
+\address{Python Full Stack Developer}
+\mobile{9497489997}
+\email{fennyamakatt@outlook.com}
+\homepage{fenny7646.github.io/fenny} 
+\github{github.com/fenny7646}
+\linkedin{linkedin.com/in/fenny7646}
+
+
+\begin{document}
+\makecvheader
+\input{cv/summary.tex}
+\input{cv/education.tex}
+\input{cv/experience.tex}
+\input{cv/projects.tex}
+\input{cv/codingprofiletwo.tex}
+\input{cv/skills.tex}
+\vspace*{-1cm}%\fill}
+\end{document}
