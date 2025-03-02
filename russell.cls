@@ -127,12 +127,14 @@
 \newcommand*{\descriptionstyle}[1]{{\fontsize{10.5pt}{1em}\bodyfontlight\upshape\color{black} #1}}
 \newcommand*{\entrytextitstyle}[1]{\fontsize{9.5pt}
 {1em}\bodyfontlight\itshape\color{black} #1}
+%-------------------Skills-------------------
 \newcommand*{\entryskillheaderstyle}[1]{\fontsize{9pt}
 {1em}\bodyfont\bfseries\color{black} #1}
 \newcommand*{\entryskillsubheaderstyle}[1]{\fontsize{9.5pt}
 {1em}\bodyfontlight\bfseries\color{blue} #1}
 \newcommand*{\entryskillitemstyle}[1]{\fontsize{7.5pt}
 {1em}\bodyfontlight\color{black} #1}
+%-------------------Projects-------------------
 \newcommand*{\entryprosubelemstyle}[1]{\fontsize{9.5pt}
 {1em}\bodyfontlight\bfseries\color{black} #1}
 
@@ -346,7 +348,7 @@
     {}
     {
       \vspace{\acvSectionContentTopSkip}
-      \vspace{-1.5mm} 
+      \vspace{-0.25mm} 
       \setlength\tabcolsep{0pt}
       \setlength{\extrarowheight}{0pt} 
       \setlength{\leftskip}{0pt} 
@@ -487,3 +489,35 @@
   \vspace{-7mm}
 }
 
+%-------------------------Certifications-------------------------
+
+\newcommand*{\entrycertheaderstyle}[1]{\fontsize{9.5pt}
+{1em}\bodyfont\upshape\color{black} #1}
+\newcommand*{\entrycertsubheaderstyle}[1]{\fontsize{8.5pt}
+{1em}\bodyfontlight\slshape\color{black} #1}
+
+
+\newenvironment{envcvcerts}{%
+  \vspace{\acvSectionContentTopSkip}
+  \vspace{1mm}
+  \begin{center}
+}{%
+  \end{center}
+  \vspace{-7mm}
+}
+
+\newcommand*{\cvcerts}[4]{%
+    \ifempty{#1#2#4}
+    {}
+    {
+    \vspace{\acvSectionContentTopSkip}
+    \vspace{-5mm}
+    \setlength{\tabcolsep}{0pt}
+    \setlength{\extrarowheight}{0pt}
+    \setlength{\tabcolsep}{0pt}
+      \setlength{\extrarowheight}{0pt}
+      \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} L{13cm} R{2.5cm}}
+      \entrycertheaderstyle{#1} | {#4} | \entrycertsubheaderstyle{#3} & \entrydatestyle{#2} \\
+    \end{tabular*}
+    }
+}
