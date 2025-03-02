@@ -325,8 +325,8 @@
   \vspace{-3mm}
 }
 \newenvironment{envcvproitems}{%
-  \vspace{\acvSectionContentTopSkip}
-  \vspace{-1mm}
+  \vspa ce{\acvSectionContentTopSkip}
+  \vspace{-3mm}
   \setlength{\leftmargin}{0pt}
   \noindent
   \renewcommand{\arraystretch}{0} % Remove vertical padding
