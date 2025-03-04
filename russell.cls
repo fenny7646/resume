@@ -325,7 +325,7 @@
   \vspace{-3mm}
 }
 \newenvironment{envcvproitems}{%
-  \vspa ce{\acvSectionContentTopSkip}
+  \vspace{\acvSectionContentTopSkip}
   \vspace{-3mm}
   \setlength{\leftmargin}{0pt}
   \noindent
@@ -397,7 +397,7 @@
   \vspace{-5mm}
   \renewcommand{\arraystretch}{0.2}
   \begin{justify}
-    \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} l L{\linewidth * \real{0.75}}} 
+    \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} l L{\linewidth * \real{0.65}}} 
 }
 {%
 \end{tabular*}
